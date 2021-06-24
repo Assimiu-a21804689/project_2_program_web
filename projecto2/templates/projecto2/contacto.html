@@ -1,0 +1,17 @@
+{% extends 'projecto2/base.html' %}
+{% block header %}
+    <h1>Contacto</h1>
+{% endblock  %}
+
+{% block main %}
+       <div>
+           <h1> <br> <br> Nós Estamos com você</h1>
+           <p>Todo o suporte necessário, sempre que precisar.</p>
+        </div>
+
+        <div>
+            <h2>Insira o seu contacto</h2>
+            {% csrf_token %}
+            {{ formulario.as_p }}
+        </div>
+{% endblock  %}
